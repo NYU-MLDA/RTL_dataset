@@ -60,9 +60,14 @@ puts $constr "set_driving_cell $::env(ABC_DRIVER_CELL)"
 puts $constr "set_load $::env(ABC_LOAD_IN_FF)"
 close $constr
 
+if {$::env(ABC_AREA)} {
+  puts "Using ABC area script."
+  set abc_script $::env(SCRIPTS_DIR)/abc_area.script
+} else {
+  puts "Using ABC speed script."
+  set abc_script $::env(SCRIPTS_DIR)/abc_speed.script
+}
 
-puts "Using ABC ADP script."
-set abc_script $::env(SCRIPTS_DIR)/abc_adp.script
 
 
 # Technology mapping for cells
