@@ -1,0 +1,9 @@
+
+export SCRIPTS_DIR=${ROOT_DIR}/scripts
+export SYNTH_SCRIPT=${SCRIPTS_DIR}/yosys_simple_synth.tcl
+
+export SC_LIB=${SCRIPTS_DIR}/NangateOpenCellLibrary_typical.lib
+export ABC_DRIVER_CELL=BUF_X1
+export ABC_LOAD_IN_FF=3.898
+
+nohup yosys -c ${SYNTH_SCRIPT} > ${DUMP_DIR}/yosys_synth.log 2>&1 & 

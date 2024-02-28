@@ -1,0 +1,37 @@
+strash
+balance -l
+rewrite -l
+refactor -l
+balance -l
+rewrite -l
+rewrite -z -l
+balance -l
+refactor -z -l
+rewrite -z -l
+balance -l
+balance -l
+rewrite -l
+refactor -l
+balance -l
+rewrite -l
+rewrite -z -l
+balance -l
+refactor -z -l
+rewrite -z -l
+balance -l
+balance -l
+rewrite -l
+refactor -l
+balance -l
+rewrite -l
+rewrite -z -l
+balance -l
+refactor -z -l
+rewrite -z -l
+balance -l
+map -B 0.9
+topo
+stime -c
+buffer -c
+upsize -c
+dnsize -c
